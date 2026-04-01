@@ -51,6 +51,12 @@ export const TRANSLATIONS = {
         PRINT: 'PRINT',
       },
       back: 'BACK TO MY WORK',
+      detail: {
+        year: 'YEAR',
+        context: 'CONTEXT',
+        role: 'ROLE',
+        stack: 'STACK',
+      },
     },
     signal: {
       address: '37067 Valeggio sul Mincio (VR)',
@@ -118,6 +124,12 @@ export const TRANSLATIONS = {
         PRINT: 'STAMPA',
       },
       back: 'TORNA ALL\'ARCHIVIO',
+      detail: {
+        year: 'ANNO',
+        context: 'CONTESTO',
+        role: 'RUOLO',
+        stack: 'STACK',
+      },
     },
     signal: {
       address: '37067 Valeggio sul Mincio (VR)',
