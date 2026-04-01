@@ -530,6 +530,33 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
       );
     }
 
+    if (section.layout === 'diagram') {
+      const img = images[0];
+      return (
+        <div key={idx} className="flex flex-col gap-6 pt-20 pb-28 border-b border-ink/10">
+          <span className="font-mono text-[10px] text-slate-400 uppercase tracking-widest">
+            {section.title[language]}
+          </span>
+          {img && (
+            <div
+              className="overflow-hidden cursor-zoom-in group"
+              onClick={() => onImageClick(section.galleryIndices[0])}
+            >
+              <img
+                src={img.full}
+                alt={section.title[language]}
+                className="w-full grayscale group-hover:grayscale-0 transition-all duration-700"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+          )}
+          <p className="font-mono text-[10px] text-slate-400 uppercase tracking-widest text-center">
+            {section.description[language]}
+          </p>
+        </div>
+      );
+    }
+
     if (section.layout === 'annotated-wireframe') {
       const annotationCallouts = (
         <div className="flex flex-col gap-6 justify-center w-[180px]">

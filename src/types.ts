@@ -14,7 +14,7 @@ export interface StorySection {
   number: string;
   title: { EN: string; IT: string };
   description: { EN: string; IT: string };
-  layout: 'text-image' | 'image-text' | 'full-grid' | 'half' | 'annotated-wireframe';
+  layout: 'text-image' | 'image-text' | 'full-grid' | 'half' | 'annotated-wireframe' | 'diagram';
   galleryIndices: number[];
   annotations?: { EN: string; IT: string }[];
   comparison?: {
@@ -221,6 +221,16 @@ export const PROJECTS: Project[] = [
           galleryIndices: [0]
         },
         {
+          number: "",
+          title: { EN: "SYSTEM OVERVIEW", IT: "PANORAMICA DEL SISTEMA" },
+          description: {
+            EN: "A modular system connecting identity, guidelines and applications across retail environments.",
+            IT: "Un sistema modulare che connette identità, linee guida e applicazioni negli ambienti retail."
+          },
+          layout: "diagram",
+          galleryIndices: [6]
+        },
+        {
           number: "02 & 03",
           title: { EN: "BRAND SYSTEM & GUIDELINES", IT: "SISTEMA DI BRAND E LINEE GUIDA" },
           description: {
@@ -248,7 +258,7 @@ export const PROJECTS: Project[] = [
             IT: "Tradotta l’identità in un sistema flessibile di asset di comunicazione e retail, progettato per adattarsi a formati e contesti diversi. Le applicazioni seguono una logica modulare, permettendo un’implementazione coerente su campagne, materiali e touchpoint fisici."
           },
           layout: "full-grid",
-          galleryIndices: [5, 6, 7]
+          galleryIndices: [5, 7, 8]
         },
         {
           number: "05",
@@ -258,7 +268,7 @@ export const PROJECTS: Project[] = [
             IT: "Progettati sistemi espositivi retail adattati a diversi ambienti store, bilanciando la coerenza del brand con i vincoli spaziali e commerciali. Il sistema garantisce una chiara gerarchia visiva e una forte presenza del brand nelle installazioni in-store."
           },
           layout: "text-image",
-          galleryIndices: [8]
+          galleryIndices: [9]
         },
         {
           number: "06",
@@ -268,7 +278,7 @@ export const PROJECTS: Project[] = [
             IT: "Abilitato il rollout coerente su più sedi attraverso un sistema di design strutturato e modulare. Il framework supporta sia le installazioni permanenti che gli aggiornamenti stagionali mantenendo la coerenza visiva."
           },
           layout: "text-image",
-          galleryIndices: [9]
+          galleryIndices: [10]
         },
         {
           number: "",
@@ -278,7 +288,7 @@ export const PROJECTS: Project[] = [
             IT: "Coerenza sulla decorazione. Componenti modulari e scalabili. Alta leggibilità nel contesto retail. Adattabilità tra formati. Gerarchia visiva chiara."
           },
           layout: "half",
-          galleryIndices: [10]
+          galleryIndices: [11]
         },
         {
           number: "",

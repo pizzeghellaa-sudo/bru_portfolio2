@@ -3,11 +3,13 @@
     "allow": [
       "Bash(npx playwright:*)",
       "Bash(npx @playwright/mcp --version)",
-      "Bash(npx @playwright/mcp@latest --help)"
+      "Bash(npx @playwright/mcp@latest --help)",
+      "Bash(cp \"C:/Users/andpi/Downloads/system diagram.jpg\" \"C:/Data/Developers/bru_portfolio2/src/assets/projects/emozione3/7-thumb.jpg\")",
+      "Bash(cp \"C:/Users/andpi/Downloads/system diagram.jpg\" \"C:/Data/Developers/bru_portfolio2/src/assets/projects/emozione3/7-full.jpg\")"
     ]
   },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "playwright"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }
