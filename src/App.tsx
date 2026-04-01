@@ -537,7 +537,7 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
             <div key={ai} className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 bg-primary flex-shrink-0" />
               <span className="font-mono text-xs text-ink uppercase tracking-wider">{a[language]}</span>
-              <span className="text-slate-300 text-sm hidden md:block">→</span>
+              <span className="ml-auto text-slate-500 text-sm hidden md:block">→</span>
             </div>
           ))}
         </div>
@@ -598,7 +598,7 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
                     <p className="font-mono text-xs text-slate-400 uppercase tracking-widest text-center">{beforeLabel[language]}</p>
                   </div>
 
-                  <span className="hidden md:block text-2xl text-slate-300 px-2">→</span>
+                  <span className="hidden md:block text-2xl text-slate-500 px-2">→</span>
 
                   <div className="flex flex-col gap-2">
                     {afterImg && (
