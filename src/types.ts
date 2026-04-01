@@ -183,14 +183,114 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "emozione3",
-    title: "Emozione3 Brand Book",
+    title: "Emozione3",
     category: "BRANDING",
     tags: ["BRANDING"],
     image: projectThumb("emozione3"),
-    gallery: projectGallery("emozione3"),
+    gallery: [...projectGallery("emozione3"), ...projectGallery("emozione3-pop")],
     description: {
-      EN: "Project developed for Wish Days S.r.l. (Verona) as part of the rebranding of Emozione3, an Italian gift box company.\nThe brand book defines the new visual identity system, including logo usage, tone of voice, and brand applications, strengthening the brand during a key phase of its evolution.\n\nThe guidelines support consistent communication across printed materials and digital platforms.",
-      IT: "Progetto sviluppato per Wish Days S.r.l. (Verona) nell’ambito del rebranding di Emozione3, azienda italiana di cofanetti regalo.\nIl brand book definisce il nuovo sistema di identità visiva, includendo l’uso del logo, il tone of voice e le applicazioni del brand, rafforzando il marchio durante una fase chiave della sua evoluzione.\n\nLe linee guida supportano una comunicazione coerente su materiali stampati e piattaforme digitali."
+      EN: "Designed a scalable brand system for Emozione3, aligning identity, communication and retail environments into a coherent visual framework across physical and digital touchpoints.",
+      IT: "Progettato un sistema di brand scalabile per Emozione3, allineando identità, comunicazione e ambienti retail in un framework visivo coerente su touchpoint fisici e digitali."
+    },
+    meta: {
+      subtitle: {
+        EN: "BRAND & RETAIL SYSTEM",
+        IT: "SISTEMA DI BRAND E RETAIL"
+      },
+      year: "2016",
+      context: {
+        EN: "Emozione3 required a structured brand system to support growth and ensure consistency across retail and communication channels. The challenge was to define a clear visual language and translate it into adaptable applications across multiple environments and formats.",
+        IT: "Emozione3 richiedeva un sistema di brand strutturato per supportare la crescita e garantire coerenza su tutti i canali retail e di comunicazione. La sfida era definire un linguaggio visivo chiaro e tradurlo in applicazioni adattabili su più ambienti e formati."
+      },
+      roles: ["BRAND DESIGN", "VISUAL SYSTEMS", "RETAIL DESIGN"],
+      stack: [
+        { label: "IDENTITY", value: "SYSTEM" },
+        { label: "BRAND", value: "GUIDELINES" },
+        { label: "RETAIL", value: "APPLICATIONS" },
+        { label: "COMMS", value: "ASSETS" }
+      ],
+      sections: [
+        {
+          number: "01",
+          title: { EN: "STRATEGY", IT: "STRATEGIA" },
+          description: {
+            EN: "Defined brand positioning, tone of voice and visual direction. Established a coherent framework to ensure alignment across retail environments and communication touchpoints.",
+            IT: "Definita la brand positioning, il tono di voce e la direzione visiva. Stabilito un framework coerente per garantire allineamento tra ambienti retail e touchpoint di comunicazione."
+          },
+          layout: "text-image",
+          galleryIndices: [0]
+        },
+        {
+          number: "02 & 03",
+          title: { EN: "BRAND SYSTEM & GUIDELINES", IT: "SISTEMA DI BRAND E LINEE GUIDA" },
+          description: {
+            EN: "Developed a modular identity system supported by structured guidelines to ensure consistency across formats, teams and applications. The system defines clear rules for typography, color, composition and logo usage, enabling controlled and scalable implementation.",
+            IT: "Sviluppato un sistema di identità modulare supportato da linee guida strutturate per garantire coerenza tra formati, team e applicazioni. Il sistema definisce regole chiare per tipografia, colore, composizione e utilizzo del logo, abilitando un’implementazione controllata e scalabile."
+          },
+          layout: "full-grid",
+          galleryIndices: [1, 2, 3]
+        },
+        {
+          number: "",
+          title: { EN: "FROM IDENTITY TO APPLICATION", IT: "DALL’IDENTITÀ ALL’APPLICAZIONE" },
+          description: {
+            EN: "The project evolved from a visual identity into a complete system connecting brand expression with real-world applications. Guidelines act as a bridge between design intent and execution, ensuring continuity across communication and retail environments.",
+            IT: "Il progetto è evoluto da un’identità visiva a un sistema completo che connette l’espressione del brand con le applicazioni nel mondo reale. Le linee guida fungono da ponte tra l’intento di design e l’esecuzione, garantendo continuità tra ambienti di comunicazione e retail."
+          },
+          layout: "image-text",
+          galleryIndices: [4]
+        },
+        {
+          number: "04",
+          title: { EN: "APPLICATION SYSTEM", IT: "SISTEMA APPLICATIVO" },
+          description: {
+            EN: "Translated the identity into a flexible system of communication and retail assets, designed to adapt across formats and contexts. Applications follow a modular logic, allowing consistent deployment across campaigns, materials and physical touchpoints.",
+            IT: "Tradotta l’identità in un sistema flessibile di asset di comunicazione e retail, progettato per adattarsi a formati e contesti diversi. Le applicazioni seguono una logica modulare, permettendo un’implementazione coerente su campagne, materiali e touchpoint fisici."
+          },
+          layout: "full-grid",
+          galleryIndices: [5, 6, 7]
+        },
+        {
+          number: "05",
+          title: { EN: "RETAIL EXECUTION", IT: "ESECUZIONE RETAIL" },
+          description: {
+            EN: "Designed retail display systems tailored to different store environments, balancing brand consistency with spatial and commercial constraints. The system ensures clear visual hierarchy and strong brand presence across in-store installations.",
+            IT: "Progettati sistemi espositivi retail adattati a diversi ambienti store, bilanciando la coerenza del brand con i vincoli spaziali e commerciali. Il sistema garantisce una chiara gerarchia visiva e una forte presenza del brand nelle installazioni in-store."
+          },
+          layout: "text-image",
+          galleryIndices: [8]
+        },
+        {
+          number: "06",
+          title: { EN: "SCALING & CONSISTENCY", IT: "SCALABILITÀ E COERENZA" },
+          description: {
+            EN: "Enabled consistent rollout across multiple locations through a structured and modular design system. The framework supports both permanent installations and seasonal updates while maintaining visual coherence.",
+            IT: "Abilitato il rollout coerente su più sedi attraverso un sistema di design strutturato e modulare. Il framework supporta sia le installazioni permanenti che gli aggiornamenti stagionali mantenendo la coerenza visiva."
+          },
+          layout: "text-image",
+          galleryIndices: [9]
+        },
+        {
+          number: "",
+          title: { EN: "VISUAL SYSTEM PRINCIPLES", IT: "PRINCIPI DEL SISTEMA VISIVO" },
+          description: {
+            EN: "Consistency over decoration. Modular and scalable components. High legibility in retail contexts. Adaptability across formats. Clear visual hierarchy.",
+            IT: "Coerenza sulla decorazione. Componenti modulari e scalabili. Alta leggibilità nel contesto retail. Adattabilità tra formati. Gerarchia visiva chiara."
+          },
+          layout: "half",
+          galleryIndices: [10]
+        },
+        {
+          number: "",
+          title: { EN: "OUTCOME", IT: "RISULTATO" },
+          description: {
+            EN: "A unified brand system connecting identity, communication and retail environments. The project improves consistency, simplifies implementation and supports scalable brand deployment across multiple contexts.",
+            IT: "Un sistema di brand unificato che connette identità, comunicazione e ambienti retail. Il progetto migliora la coerenza, semplifica l’implementazione e supporta il deployment scalabile del brand su più contesti."
+          },
+          layout: "half",
+          galleryIndices: []
+        }
+      ]
     }
   },
   {

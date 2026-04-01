@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx playwright:*)",
+      "Bash(npx @playwright/mcp --version)",
+      "Bash(npx @playwright/mcp@latest --help)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "enableAllProjectMcpServers": true
+}
