@@ -296,7 +296,7 @@ export const PROJECTS: Project[] = [
             IT: "Realizzato con coding assistito dall’IA tramite Gemini Flash (Vite, React, Tailwind v4, Framer Motion). Iterazione delle funzionalità e rifinitura delle interazioni prima del versionamento su GitHub."
           },
           layout: "half",
-          galleryIndices: [6]
+          galleryIndices: [7]
         },
         {
           number: "06",
@@ -306,7 +306,7 @@ export const PROJECTS: Project[] = [
             IT: "Deploy automatico tramite Vercel dal branch principale. Analytics integrato con @vercel/analytics. Dominio personalizzato e configurazione dell’ambiente."
           },
           layout: "half",
-          galleryIndices: [6]
+          galleryIndices: [8]
         }
       ]
     }
