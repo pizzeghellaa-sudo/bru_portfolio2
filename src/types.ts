@@ -264,7 +264,7 @@ export const PROJECTS: Project[] = [
             IT: "Pagine strutturate, navigazione e gerarchia dei contenuti. Layout modulare ed esplorazione dei flussi utente seguendo una rigorosa griglia a 12 colonne."
           },
           layout: "annotated-wireframe",
-          galleryIndices: [3, 4],
+          galleryIndices: [1],
           annotations: [
             { EN: "12-column grid",    IT: "Griglia a 12 colonne" },
             { EN: "Modular layout",    IT: "Layout modulare" },
@@ -272,8 +272,8 @@ export const PROJECTS: Project[] = [
           ],
           comparison: {
             heading:     { EN: "From structure to interface", IT: "Dalla struttura all'interfaccia" },
-            beforeIndex: 5,
-            afterIndex:  6,
+            beforeIndex: 2,
+            afterIndex:  3,
             beforeLabel: { EN: "Wireframe",  IT: "Wireframe" },
             afterLabel:  { EN: "Interface",  IT: "Interfaccia" },
           },
@@ -286,7 +286,7 @@ export const PROJECTS: Project[] = [
             IT: "Sviluppo della tipografia, del sistema visivo e dei componenti UI tramite Stitch AI attraverso sessioni iterative di progettazione basate su prompt. Sistema a griglia svizzera con palette monocromatica e rosso primario."
           },
           layout: "full-grid",
-          galleryIndices: [0, 1, 2]
+          galleryIndices: [4, 5, 6]
         },
         {
           number: "05",
@@ -296,7 +296,7 @@ export const PROJECTS: Project[] = [
             IT: "Realizzato con coding assistito dall’IA tramite Gemini Flash (Vite, React, Tailwind v4, Framer Motion). Iterazione delle funzionalità e rifinitura delle interazioni prima del versionamento su GitHub."
           },
           layout: "half",
-          galleryIndices: [2]
+          galleryIndices: [6]
         },
         {
           number: "06",
@@ -306,7 +306,7 @@ export const PROJECTS: Project[] = [
             IT: "Deploy automatico tramite Vercel dal branch principale. Analytics integrato con @vercel/analytics. Dominio personalizzato e configurazione dell’ambiente."
           },
           layout: "half",
-          galleryIndices: [2]
+          galleryIndices: [6]
         }
       ]
     }
