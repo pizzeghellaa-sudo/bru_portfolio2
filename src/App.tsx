@@ -532,7 +532,7 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
 
     if (section.layout === 'annotated-wireframe') {
       const annotationCallouts = (
-        <div className="flex flex-col gap-6 justify-center min-w-[160px]">
+        <div className="flex flex-col gap-6 justify-center w-[180px]">
           {(section.annotations || []).map((a, ai) => (
             <div key={ai} className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 bg-primary flex-shrink-0" />
