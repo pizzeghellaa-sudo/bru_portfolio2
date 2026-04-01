@@ -31,6 +31,7 @@ export default function App() {
   const [language, setLanguage] = useState<Language>('EN');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [currentTime, setCurrentTime] = useState(new Date());
+  const mainRef = useRef<HTMLElement>(null);
 
   const t = TRANSLATIONS[language];
 
@@ -41,6 +42,10 @@ export default function App() {
     const timer = setInterval(() => setCurrentTime(new Date()), 1000);
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    mainRef.current?.scrollTo(0, 0);
+  }, [selectedProjectId, activeSection]);
 
   const formatTime = (date: Date) => {
     return date.toLocaleTimeString('en-GB', {
@@ -111,7 +116,7 @@ export default function App() {
       </aside>
 
       {/* Main Content Area */}
-      <main className="flex-1 h-full overflow-y-auto no-scrollbar relative z-10">
+      <main ref={mainRef} className="flex-1 h-full overflow-y-auto no-scrollbar relative z-10">
         {/* Mobile Header */}
         <div className="md:hidden flex justify-between items-center p-6 border-b border-ink/10 bg-background-light sticky top-0 z-30">
           <p className="text-lg font-medium tracking-[0.1em] uppercase font-montserrat">BRU BULGARELLI</p>
