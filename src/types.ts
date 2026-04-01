@@ -10,6 +10,31 @@ export interface Experience {
   };
 }
 
+export interface StorySection {
+  number: string;
+  title: { EN: string; IT: string };
+  description: { EN: string; IT: string };
+  layout: 'text-image' | 'image-text' | 'full-grid' | 'half' | 'annotated-wireframe';
+  galleryIndices: number[];
+  annotations?: { EN: string; IT: string }[];
+  comparison?: {
+    heading: { EN: string; IT: string };
+    beforeIndex: number;
+    afterIndex: number;
+    beforeLabel: { EN: string; IT: string };
+    afterLabel: { EN: string; IT: string };
+  };
+}
+
+export interface ProjectMeta {
+  subtitle: { EN: string; IT: string };
+  year: string;
+  context: { EN: string; IT: string };
+  roles: string[];
+  stack: { label: string; value: string }[];
+  sections: StorySection[];
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -25,6 +50,7 @@ export interface Project {
     thumb: string; // Low-res for the gallery list
     full: string;  // High-res for the zoom modal
   }[];
+  meta?: ProjectMeta;
 }
 
 
@@ -201,8 +227,78 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "Personal portfolio website\n\n1.Ideation — defined project goals, audience and positioning.\n\n2. Information Architecture — structured pages, navigation and content hierarchy.\n\n3. Wireframing — explored layout structures and user flows.\n\n4. Visual Design — developed typography, visual system and UI components using Stitch AI through iterative prompt-based design sessions.\n\n5. Development & Launch — built the website with AI-assisted coding using Gemini 3 Flash (Vite, React), iterating features before version control on GitHub and automated deployment via Vercel.",
       IT: "Sito web portfolio personale\n\n1. Ideazione — definizione degli obiettivi del progetto, del pubblico di riferimento e del posizionamento.\n\n2. Architettura dell’informazione — strutturazione delle pagine, della navigazione e della gerarchia dei contenuti.\n\n3. Wireframing — esplorazione delle strutture di layout e dei flussi utente.\n\n4. Visual Design — sviluppo della tipografia, del sistema visivo e dei componenti UI utilizzando Stitch AI attraverso sessioni iterative di progettazione basate su prompt.\n\n5. Sviluppo e lancio — realizzazione del sito con coding assistito dall’IA tramite Gemini 3 Flash (Vite, React), iterazione delle funzionalità prima del versionamento su GitHub e deploy automatico tramite Vercel."
+    },
+    meta: {
+      subtitle: {
+        EN: "AI-ASSISTED DESIGN AND DEVELOPMENT",
+        IT: "DESIGN E SVILUPPO ASSISTITO DALL’IA"
+      },
+      year: "2026",
+      context: {
+        EN: "Personal portfolio built to showcase brand and visual design work. Designed using Stitch AI for visual exploration and developed with AI-assisted coding via Gemini, deployed on Vercel.",
+        IT: "Portfolio personale creato per presentare lavori di brand e visual design. Progettato con Stitch AI per l’esplorazione visiva e sviluppato con coding assistito dall’IA tramite Gemini, distribuito su Vercel."
+      },
+      roles: ["CONCEPT", "UX STRUCTURE", "VISUAL DESIGN", "AI-ASSISTED DEVELOPMENT", "DEPLOYMENT"],
+      stack: [
+        { label: "DESIGN", value: "STITCH AI" },
+        { label: "ENGINE", value: "GEMINI FLASH" },
+        { label: "FRAMEWORK", value: "REACT / VITE" },
+        { label: "HOSTING", value: "VERCEL" }
+      ],
+      sections: [
+        {
+          number: "01",
+          title: { EN: "IDEATION", IT: "IDEAZIONE" },
+          description: {
+            EN: "Defined project goals, target audience and positioning. Established the visual direction and tone of voice for the portfolio as a brand artifact.",
+            IT: "Definizione degli obiettivi del progetto, del pubblico di riferimento e del posizionamento. Stabilita la direzione visiva e il tono di voce del portfolio come artefatto di brand."
+          },
+          layout: "text-image",
+          galleryIndices: [0]
+        },
+        {
+          number: "02 & 03",
+          title: { EN: "STRUCTURE & WIREFRAMES", IT: "STRUTTURA E WIREFRAME" },
+          description: {
+            EN: "Structured pages, navigation and content hierarchy. Explored layout structures and user flows through low-fidelity wireframes before moving to visual design.",
+            IT: "Strutturazione delle pagine, della navigazione e della gerarchia dei contenuti. Esplorate le strutture di layout e i flussi utente attraverso wireframe prima di passare al visual design."
+          },
+          layout: "image-text",
+          galleryIndices: [1]
+        },
+        {
+          number: "04",
+          title: { EN: "VISUAL DESIGN", IT: "VISUAL DESIGN" },
+          description: {
+            EN: "Developed typography, visual system and UI components using Stitch AI through iterative prompt-based design sessions. Built a Swiss-grid aesthetic with a monochromatic palette and a bold primary red.",
+            IT: "Sviluppo della tipografia, del sistema visivo e dei componenti UI tramite Stitch AI attraverso sessioni iterative di progettazione basate su prompt. Sistema a griglia svizzera con palette monocromatica e rosso primario."
+          },
+          layout: "full-grid",
+          galleryIndices: [0, 1, 2]
+        },
+        {
+          number: "05",
+          title: { EN: "DEVELOPMENT", IT: "SVILUPPO" },
+          description: {
+            EN: "Built with AI-assisted coding using Gemini Flash (Vite, React, Tailwind v4, Framer Motion). Iterating features and refining interactions before version control on GitHub.",
+            IT: "Realizzato con coding assistito dall’IA tramite Gemini Flash (Vite, React, Tailwind v4, Framer Motion). Iterazione delle funzionalità e rifinitura delle interazioni prima del versionamento su GitHub."
+          },
+          layout: "half",
+          galleryIndices: [2]
+        },
+        {
+          number: "06",
+          title: { EN: "DEPLOYMENT", IT: "DISTRIBUZIONE" },
+          description: {
+            EN: "Automated deployment via Vercel from the main branch. Analytics integrated with @vercel/analytics. Custom domain and environment configuration.",
+            IT: "Deploy automatico tramite Vercel dal branch principale. Analytics integrato con @vercel/analytics. Dominio personalizzato e configurazione dell’ambiente."
+          },
+          layout: "half",
+          galleryIndices: [2]
+        }
+      ]
     }
-  }  
+  }
 
 ];
 
