@@ -260,11 +260,23 @@ export const PROJECTS: Project[] = [
           number: "02 & 03",
           title: { EN: "STRUCTURE & WIREFRAMES", IT: "STRUTTURA E WIREFRAME" },
           description: {
-            EN: "Structured pages, navigation and content hierarchy. Explored layout structures and user flows through low-fidelity wireframes before moving to visual design.",
-            IT: "Strutturazione delle pagine, della navigazione e della gerarchia dei contenuti. Esplorate le strutture di layout e i flussi utente attraverso wireframe prima di passare al visual design."
+            EN: "Structured pages, navigation and content hierarchy. Modular layout and user flow exploration following a strict 12-column grid.",
+            IT: "Pagine strutturate, navigazione e gerarchia dei contenuti. Layout modulare ed esplorazione dei flussi utente seguendo una rigorosa griglia a 12 colonne."
           },
-          layout: "image-text",
-          galleryIndices: [1]
+          layout: "annotated-wireframe",
+          galleryIndices: [3, 4],
+          annotations: [
+            { EN: "12-column grid",    IT: "Griglia a 12 colonne" },
+            { EN: "Modular layout",    IT: "Layout modulare" },
+            { EN: "Content hierarchy", IT: "Gerarchia dei contenuti" },
+          ],
+          comparison: {
+            heading:     { EN: "From structure to interface", IT: "Dalla struttura all'interfaccia" },
+            beforeIndex: 5,
+            afterIndex:  6,
+            beforeLabel: { EN: "Wireframe",  IT: "Wireframe" },
+            afterLabel:  { EN: "Interface",  IT: "Interfaccia" },
+          },
         },
         {
           number: "04",
