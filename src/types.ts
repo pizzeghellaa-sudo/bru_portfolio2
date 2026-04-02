@@ -459,7 +459,7 @@ export const PROJECTS: Project[] = [
             EN: "Extended the identity into the physical space through window graphics and signage, reinforcing visibility and recognition in the urban environment.",
             IT: "Estesa l’identità nello spazio fisico attraverso vetrofanie e segnaletica, rafforzando la visibilità e la riconoscibilità nell’ambiente urbano."
           },
-          layout: "text-image",
+          layout: "full-grid",
           galleryIndices: [3]
         },
         {

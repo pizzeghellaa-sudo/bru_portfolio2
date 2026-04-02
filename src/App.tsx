@@ -487,7 +487,7 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
       <div className="flex flex-col gap-4 justify-center">
         <span className="text-5xl md:text-6xl font-black text-primary leading-none">{section.number}</span>
         <h4 className="text-xl font-bold text-ink uppercase tracking-tight">{section.title[language]}</h4>
-        <p className="text-sm leading-relaxed text-ink/80">{section.description[language]}</p>
+        <p className="text-sm leading-[1.75] text-ink/80">{section.description[language]}</p>
       </div>
     );
 
@@ -508,7 +508,7 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
 
     if (section.layout === 'text-image') {
       return (
-        <div key={idx} className="grid grid-cols-1 md:grid-cols-2 gap-12 py-12 border-b border-ink/10">
+        <div key={idx} className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-12 py-12 border-b border-ink/10">
           {textBlock}
           {imageBlock(images[0], 0)}
         </div>
@@ -517,7 +517,7 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
 
     if (section.layout === 'image-text') {
       return (
-        <div key={idx} className="grid grid-cols-1 md:grid-cols-2 gap-12 py-12 border-b border-ink/10">
+        <div key={idx} className="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-12 py-12 border-b border-ink/10">
           <div className="order-2 md:order-1">{imageBlock(images[0], 0)}</div>
           <div className="order-1 md:order-2">{textBlock}</div>
         </div>
@@ -525,12 +525,15 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
     }
 
     if (section.layout === 'full-grid') {
+      const imageGrid = images.length === 1
+        ? <div>{imageBlock(images[0], 0)}</div>
+        : images.length === 2
+          ? <div className="grid grid-cols-1 sm:grid-cols-[3fr_2fr] gap-4">{images.map((img, i) => imageBlock(img, i))}</div>
+          : <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">{images.map((img, i) => imageBlock(img, i))}</div>;
       return (
-        <div key={idx} className="flex flex-col gap-8 py-12 border-b border-ink/10">
+        <div key={idx} className="flex flex-col gap-8 py-16 border-b border-ink/10">
           {textBlock}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {images.map((img, i) => imageBlock(img, i))}
-          </div>
+          {imageGrid}
         </div>
       );
     }
@@ -676,15 +679,18 @@ function ProjectDetail({ projectId, onBack, onImageClick, language }: { projectI
           i += 1;
         }
         result.push(
-          <div key={`half-${i}`} className={`grid grid-cols-1 ${pair.length === 2 ? 'md:grid-cols-2' : ''} gap-12 py-12 border-b border-ink/10`}>
+          <div key={`half-${i}`} className={`grid grid-cols-1 ${pair.length === 2 ? 'md:grid-cols-2' : ''} gap-12 py-16 border-b border-ink/10`}>
             {pair.map((s, pi) => {
               const img = project.gallery[s.galleryIndices[0]];
               return (
                 <div key={pi} className="flex flex-col gap-6">
                   <div className="flex flex-col gap-4">
-                    <span className="text-5xl md:text-6xl font-black text-primary leading-none">{s.number}</span>
+                    {s.number
+                      ? <span className="text-5xl md:text-6xl font-black text-primary leading-none">{s.number}</span>
+                      : <div className="w-12 h-0.5 bg-primary" />
+                    }
                     <h4 className="text-xl font-bold text-ink uppercase tracking-tight">{s.title[language]}</h4>
-                    <p className="text-sm leading-relaxed text-ink/80">{s.description[language]}</p>
+                    <p className="text-sm leading-[1.75] text-ink/80">{s.description[language]}</p>
                   </div>
                   {img && (
                     <div
