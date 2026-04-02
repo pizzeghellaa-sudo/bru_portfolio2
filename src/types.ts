@@ -122,66 +122,6 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
-    id: "pam panorama",
-    title: "In-Store promotion",
-    category: "PRINT-POP",
-    tags: ["PRINT/POP"],
-    image: projectThumb("pam-panorama"),
-    gallery: projectGallery("pam-panorama"),
-    description: {
-      EN: "At Verba DDB (Verona) I worked with retail clients like Panorama, Pam and Bata, doing coordination and creative work.\n\nI managed communication between client and agency, working with design, photography and production. I also followed photo shoots for products and fashion.\n\nI also worked as a graphic designer on promotions, in-store materials and new store openings.\n\nThis experience made me flexible, precise and organized, able to understand needs and create clear visual solutions for customers.",
-      IT: "In Verba DDB (Verona) ho lavorato su clienti retail strutturati come Panorama (Gruppo Pam), Pam e Bata, muovendomi tra coordinamento e progettazione creativa.\n\ Come Account ho gestito il dialogo tra cliente e agenzia, orchestrando flussi complessi tra grafica, fotografia e produzione.\n\nHo seguito da vicino anche la parte fotografica, dagli shooting prodotto per la GDO agli indossati, costruendo un linguaggio visivo coerente e accessibile.\n\nParallelamente, ho sviluppato il mio ruolo come grafica, lavorando su campagne promozionali, comunicazione in-store e nuove aperture, adattando ogni progetto al contesto e al target. Un’esperienza che mi ha portata a essere flessibile, precisa e organizzata, capace di entrare nel merito dei progetti e tradurre esigenze diverse in soluzioni visive efficaci, sempre con uno sguardo attento al consumatore finale."
-    }
-  }, {
-    id: "emozione3 pop",
-    title: "Emozione3 Pop",
-    category: "PRINT/POP",
-    tags: ["PRINT/POP"],
-    image: projectThumb("emozione3-pop"),
-    gallery: projectGallery("emozione3-pop"),
-    description: {
-      EN: "Gift Boxes.\nDesign and development of POP materials for retail, with a focus on seasonal displays, co-marketing initiatives, and new product and bundle launches.\n\nProjects were delivered across various retail environments (shopping malls, bookstores, large-scale retail, travel agencies), adapting solutions and visual language to specific spaces and needs.\n\nFrom floor displays to coordinated communication materials (posters, leaflets, shelves, stoppers, counter displays, and backlit walls), a consistent and recognizable visual system was created.\n\nA valuable experience that allowed me to grow in diverse, fast-paced environments, with direct visibility of results at the point of sale.",
-      IT: "Cofanetti regalo.\nProgettazione e sviluppo di materiali POP per il punto vendita, con focus su allestimenti stagionali, co-marketing e lanci di nuovi prodotti e bundle.\n\nI progetti sono stati realizzati in diversi contesti retail (centri commerciali, librerie, GDO, agenzie viaggio), adattando soluzioni e linguaggi agli spazi e alle esigenze specifiche.\n\nDagli espositori da terra ai materiali coordinati (locandine, leaflet, mensole, stopper, espositori da banco e wall retroilluminati), è stato costruito un sistema visivo coerente e riconoscibile.\n\nUn’esperienza formativa che mi ha permesso di crescere in contesti diversi e ad alto ritmo, con un riscontro diretto sul punto vendita."
-    }
-  }, 
-  {
-    id: "kalika",
-    title: "Kalika",
-    category: "BRANDING / PRINT",
-    tags: ["PRINT"],
-    image: projectThumb("kalika"),
-    video: projectVideo("kalika", "kalika_logo_animate.mp4"),
-	  gallery: projectGallery("kalika"),
-    description: {
-      EN: "Kalika Branding Project\n\nThe branding project reflects the identity of the two young entrepreneurs: dynamic, feminine and approachable, with a careful and professional approach.\n\nAt the center of the visual system there is a versatile and easily recognizable logo, developed in a young and bright color palette, designed to communicate freshness, energy and positivity across all touchpoints.\n\nThe window graphic also helps to strengthen the brand presence and recognition over time in the urban space.",
-      IT: "Progetto di Branding Kalika\n\nIl progetto di branding riflette l’identità delle due giovani imprenditrici: dinamica, femminile e accessibile, unita a un approccio sempre curato e professionale.\n\nAl centro del sistema visivo si trova un logo versatile e immediatamente riconoscibile, declinato in una palette cromatica giovane e vivace, pensata per trasmettere freschezza, energia e positività su ogni touchpoint.\n\nAnche la vetrofania contribuisce a rafforzare nel tempo la presenza e la riconoscibilità del brand nello spazio urbano."
-    }
-  },
-  {
-    id: "europlan",
-    title: "Europlan",
-    category: "BRANDING / PRINT",
-    tags: ["PRINT"],
-    image: projectThumb("europlan"),
-	  gallery: projectGallery("europlan"),
-    description: {
-      EN: "For over ten years I worked in the design department of Europlan, a leading hospitality group on Lake Garda serving an international market. I developed graphic and editorial communication materials for multiple properties, including promotional campaigns, trade-fair assets, and printed collateral.\n\nMy role covered graphic design, editorial layout, photo post-production, and retouching, as well as the design of visual communication systems and wayfinding across hospitality, wellness, events, and business contexts.",
-      IT: "Per oltre dieci anni ho lavorato nel reparto grafico di Europlan, realtà turistica di riferimento sul Lago di Garda con un pubblico internazionale. Ho sviluppato materiali di comunicazione grafica ed editoriale per diverse strutture del gruppo, tra cui campagne promozionali, materiali per fiere e supporti stampati.\n\nIl mio ruolo comprendeva graphic design, impaginazione editoriale, post-produzione fotografica e fotoritocco, oltre alla progettazione di sistemi di comunicazione visiva e wayfinding applicati ai contesti di ospitalità, wellness, eventi e business."
-    }
-  },  
-  {
-    id: "caesius",
-    title: "Hotel Caesius Brand Book",
-    category: "BRANDING",
-    tags: ["BRANDING"],
-    image: projectThumb("caesius"),
-	  gallery: projectGallery("caesius"),
-    description: {
-      EN: "Hotel Caesius is a luxury hospitality brand located on Lake Garda. The project involved the creation of a visual identity system and brand guidelines for print and digital applications.\n\nThe identity was implemented across all hotel touchpoints including printed materials, digital platforms and internal brand documentation.",
-      IT: "L’Hotel Caesius è un brand di ospitalità di lusso situato sul Lago di Garda. Il progetto ha previsto la creazione di un sistema di identità visiva e delle linee guida del brand per applicazioni su stampa e digitale.\n\nL’identità è stata implementata in tutti i touchpoint dell’hotel, inclusi materiali stampati, piattaforme digitali e documentazione interna del brand."
-    }
-  },
-  {
     id: "emozione3",
     title: "Emozione3",
     category: "BRANDING",
@@ -304,8 +244,240 @@ export const PROJECTS: Project[] = [
     }
   },
   {
+    id: "pam panorama",
+    title: "PAM-Panorama",
+    category: "PRINT/POP",
+    tags: ["PRINT/POP"],
+    image: projectThumb("pam-panorama"),
+    gallery: projectGallery("pam-panorama"),
+    description: {
+      EN: "Designed and coordinated retail communication across campaigns, in-store materials and promotional systems, ensuring consistency between brand, product and customer experience.",
+      IT: "Progettato e coordinato la comunicazione retail su campagne, materiali in-store e sistemi promozionali, garantendo coerenza tra brand, prodotto ed esperienza del cliente."
+    },
+    meta: {
+      subtitle: {
+        EN: "RETAIL COMMUNICATION SYSTEM",
+        IT: "SISTEMA DI COMUNICAZIONE RETAIL"
+      },
+      year: "2010",
+      context: {
+        EN: "Retail communication work developed at Verba DDB for clients Pam and Panorama. The project focused on connecting campaigns, visual assets and in-store materials across multiple touchpoints.",
+        IT: "Lavoro di comunicazione retail sviluppato in Verba DDB per i clienti Pam e Panorama. Il progetto si è concentrato sul collegamento di campagne, asset visivi e materiali in-store su più touchpoint."
+      },
+      roles: ["VISUAL DESIGN", "RETAIL COMMUNICATION", "ART DIRECTION"],
+      stack: [
+        { label: "CAMPAIGNS", value: "MATERIALS" },
+        { label: "IN-STORE", value: "SYSTEMS" },
+        { label: "PHOTO", value: "PRODUCTION" },
+        { label: "PROMO", value: "ASSETS" }
+      ],
+      sections: [
+        {
+          number: "01",
+          title: { EN: "STRATEGY & COORDINATION", IT: "STRATEGIA E COORDINAMENTO" },
+          description: {
+            EN: "Managed communication between client, agency and production teams, aligning campaign objectives with visual direction and retail constraints. Established the operational framework for consistent execution across touchpoints.",
+            IT: "Gestita la comunicazione tra cliente, agenzia e team di produzione, allineando gli obiettivi di campagna con la direzione visiva e i vincoli retail. Stabilito il framework operativo per un’esecuzione coerente su tutti i touchpoint."
+          },
+          layout: "text-image",
+          galleryIndices: [0]
+        },
+        {
+          number: "",
+          title: { EN: "SYSTEM OVERVIEW", IT: "PANORAMICA DEL SISTEMA" },
+          description: {
+            EN: "A modular communication system connecting campaign logic, visual assets and retail execution.",
+            IT: "Un sistema di comunicazione modulare che connette logica di campagna, asset visivi ed esecuzione retail."
+          },
+          layout: "diagram",
+          galleryIndices: [5]
+        },
+        {
+          number: "02 & 03",
+          title: { EN: "CONTENT & SYSTEM", IT: "CONTENUTO E SISTEMA" },
+          description: {
+            EN: "Developed visual assets and translated campaign concepts into adaptable communication systems across multiple formats, ensuring consistency between print, promotional and in-store materials.",
+            IT: "Sviluppati asset visivi e tradotti i concetti di campagna in sistemi di comunicazione adattabili su più formati, garantendo coerenza tra materiali stampati, promozionali e in-store."
+          },
+          layout: "full-grid",
+          galleryIndices: [1, 2]
+        },
+        {
+          number: "",
+          title: { EN: "FROM CAMPAIGN TO STORE", IT: "DALLA CAMPAGNA AL PUNTO VENDITA" },
+          description: {
+            EN: "A continuous system connecting campaign design, content production and in-store execution, ensuring coherence across all customer touchpoints.",
+            IT: "Un sistema continuo che connette il design di campagna, la produzione di contenuti e l’esecuzione in-store, garantendo coerenza su tutti i touchpoint del cliente."
+          },
+          layout: "image-text",
+          galleryIndices: [3]
+        },
+        {
+          number: "04",
+          title: { EN: "RETAIL APPLICATIONS", IT: "APPLICAZIONI RETAIL" },
+          description: {
+            EN: "Applied the communication system to retail environments through displays, signage and promotional materials adapted to different store layouts and customer interactions.",
+            IT: "Applicato il sistema di comunicazione agli ambienti retail attraverso espositori, segnaletica e materiali promozionali adattati ai diversi layout dei punti vendita e alle interazioni con il cliente."
+          },
+          layout: "text-image",
+          galleryIndices: [4]
+        },
+        {
+          number: "05",
+          title: { EN: "IMPLEMENTATION", IT: "IMPLEMENTAZIONE" },
+          description: {
+            EN: "Delivered campaign materials across multiple locations, adapting designs to production requirements and ensuring consistency across formats and environments.",
+            IT: "Consegnati i materiali di campagna su più sedi, adattando i design ai requisiti di produzione e garantendo coerenza tra formati e ambienti."
+          },
+          layout: "half",
+          galleryIndices: []
+        },
+        {
+          number: "06",
+          title: { EN: "SCALING & CONSISTENCY", IT: "SCALABILITÀ E COERENZA" },
+          description: {
+            EN: "Supported ongoing campaign rollout and in-store updates, maintaining visual coherence across seasonal changes and different retail contexts.",
+            IT: "Supportato il rollout continuativo delle campagne e gli aggiornamenti in-store, mantenendo la coerenza visiva attraverso i cambiamenti stagionali e i diversi contesti retail."
+          },
+          layout: "half",
+          galleryIndices: []
+        },
+        {
+          number: "",
+          title: { EN: "VISUAL SYSTEM PRINCIPLES", IT: "PRINCIPI DEL SISTEMA VISIVO" },
+          description: {
+            EN: "Consistency across touchpoints. Adaptability to retail environments. Clarity in promotional communication. Integration between campaign and store.",
+            IT: "Coerenza su tutti i touchpoint. Adattabilità agli ambienti retail. Chiarezza nella comunicazione promozionale. Integrazione tra campagna e punto vendita."
+          },
+          layout: "half",
+          galleryIndices: []
+        },
+        {
+          number: "",
+          title: { EN: "OUTCOME", IT: "RISULTATO" },
+          description: {
+            EN: "A cohesive retail communication system connecting campaign design, visual assets and in-store execution. The work ensured consistency across formats and improved coordination between teams and production.",
+            IT: "Un sistema di comunicazione retail coeso che connette il design di campagna, gli asset visivi e l’esecuzione in-store. Il lavoro ha garantito coerenza tra formati e migliorato il coordinamento tra team e produzione."
+          },
+          layout: "half",
+          galleryIndices: []
+        }
+      ]
+    }
+  },
+  /*
+  {
+    id: "emozione3 pop",
+    title: "Emozione3 Pop",
+    category: "PRINT/POP",
+    tags: ["PRINT/POP"],
+    image: projectThumb("emozione3-pop"),
+    gallery: projectGallery("emozione3-pop"),
+    description: {
+      EN: "Gift Boxes.\nDesign and development of POP materials for retail, with a focus on seasonal displays, co-marketing initiatives, and new product and bundle launches.\n\nProjects were delivered across various retail environments (shopping malls, bookstores, large-scale retail, travel agencies), adapting solutions and visual language to specific spaces and needs.\n\nFrom floor displays to coordinated communication materials (posters, leaflets, shelves, stoppers, counter displays, and backlit walls), a consistent and recognizable visual system was created.\n\nA valuable experience that allowed me to grow in diverse, fast-paced environments, with direct visibility of results at the point of sale.",
+      IT: "Cofanetti regalo.\nProgettazione e sviluppo di materiali POP per il punto vendita, con focus su allestimenti stagionali, co-marketing e lanci di nuovi prodotti e bundle.\n\nI progetti sono stati realizzati in diversi contesti retail (centri commerciali, librerie, GDO, agenzie viaggio), adattando soluzioni e linguaggi agli spazi e alle esigenze specifiche.\n\nDagli espositori da terra ai materiali coordinati (locandine, leaflet, mensole, stopper, espositori da banco e wall retroilluminati), è stato costruito un sistema visivo coerente e riconoscibile.\n\nUn’esperienza formativa che mi ha permesso di crescere in contesti diversi e ad alto ritmo, con un riscontro diretto sul punto vendita."
+    }
+  },
+  */ 
+  {
+    id: "europlan",
+    title: "Europlan",
+    category: "BRANDING / PRINT",
+    tags: ["PRINT"],
+    image: projectThumb("europlan"),
+	  gallery: projectGallery("europlan"),
+    description: {
+      EN: "For over ten years I worked in the design department of Europlan, a leading hospitality group on Lake Garda serving an international market. I developed graphic and editorial communication materials for multiple properties, including promotional campaigns, trade-fair assets, and printed collateral.\n\nMy role covered graphic design, editorial layout, photo post-production, and retouching, as well as the design of visual communication systems and wayfinding across hospitality, wellness, events, and business contexts.",
+      IT: "Per oltre dieci anni ho lavorato nel reparto grafico di Europlan, realtà turistica di riferimento sul Lago di Garda con un pubblico internazionale. Ho sviluppato materiali di comunicazione grafica ed editoriale per diverse strutture del gruppo, tra cui campagne promozionali, materiali per fiere e supporti stampati.\n\nIl mio ruolo comprendeva graphic design, impaginazione editoriale, post-produzione fotografica e fotoritocco, oltre alla progettazione di sistemi di comunicazione visiva e wayfinding applicati ai contesti di ospitalità, wellness, eventi e business."
+    }
+  },  
+  {
+    id: "caesius",
+    title: "Hotel Caesius",
+    category: "BRANDING",
+    tags: ["BRANDING"],
+    image: projectThumb("caesius"),
+	  gallery: projectGallery("caesius"),
+    description: {
+      EN: "Hotel Caesius is a luxury hospitality brand located on Lake Garda. The project involved the creation of a visual identity system and brand guidelines for print and digital applications.\n\nThe identity was implemented across all hotel touchpoints including printed materials, digital platforms and internal brand documentation.",
+      IT: "L’Hotel Caesius è un brand di ospitalità di lusso situato sul Lago di Garda. Il progetto ha previsto la creazione di un sistema di identità visiva e delle linee guida del brand per applicazioni su stampa e digitale.\n\nL’identità è stata implementata in tutti i touchpoint dell’hotel, inclusi materiali stampati, piattaforme digitali e documentazione interna del brand."
+    }
+  },  
+  {
+    id: "kalika",
+    title: "Kalika",
+    category: "BRANDING / PRINT",
+    tags: ["PRINT"],
+    image: projectThumb("kalika"),
+    video: projectVideo("kalika", "kalika_logo_animate.mp4"),
+	  gallery: projectGallery("kalika"),
+    description: {
+      EN: "Kalika Branding Project\n\nThe branding project reflects the identity of the two young entrepreneurs: dynamic, feminine and approachable, with a careful and professional approach.\n\nAt the center of the visual system there is a versatile and easily recognizable logo, developed in a young and bright color palette, designed to communicate freshness, energy and positivity across all touchpoints.\n\nThe window graphic also helps to strengthen the brand presence and recognition over time in the urban space.",
+      IT: "Progetto di Branding Kalika\n\nIl progetto di branding riflette l’identità delle due giovani imprenditrici: dinamica, femminile e accessibile, unita a un approccio sempre curato e professionale.\n\nAl centro del sistema visivo si trova un logo versatile e immediatamente riconoscibile, declinato in una palette cromatica giovane e vivace, pensata per trasmettere freschezza, energia e positività su ogni touchpoint.\n\nAnche la vetrofania contribuisce a rafforzare nel tempo la presenza e la riconoscibilità del brand nello spazio urbano."
+    },
+    meta: {
+      subtitle: {
+        EN: "BRANDING / VISUAL IDENTITY",
+        IT: "BRANDING / IDENTITÀ VISIVA"
+      },
+      year: "2025",
+      context: {
+        EN: "Branding project for two entrepreneurs, focused on creating a clear and recognizable identity aligned with a dynamic and approachable positioning.",
+        IT: "Progetto di branding per due imprenditrici, focalizzato sulla creazione di un’identità chiara e riconoscibile, allineata a un posizionamento dinamico e accessibile."
+      },
+      roles: ["VISUAL DESIGN", "BRAND IDENTITY"],
+      stack: [
+        { label: "IDENTITY", value: "SYSTEM" },
+        { label: "PRINT", value: "MATERIALS" },
+        { label: "SIGNAGE", value: "GRAPHICS" }
+      ],
+      sections: [
+        {
+          number: "01",
+          title: { EN: "IDENTITY SYSTEM", IT: "SISTEMA DI IDENTITÀ" },
+          description: {
+            EN: "Developed a versatile logo and visual language designed for clarity, flexibility and recognition, supported by a fresh color palette and balanced composition.",
+            IT: "Sviluppato un logo versatile e un linguaggio visivo progettato per chiarezza, flessibilità e riconoscibilità, supportato da una palette cromatica fresca e una composizione equilibrata."
+          },
+          layout: "text-image",
+          galleryIndices: [0]
+        },
+        {
+          number: "02",
+          title: { EN: "APPLICATIONS", IT: "APPLICAZIONI" },
+          description: {
+            EN: "Applied the identity across printed materials and brand assets, ensuring consistency in tone, typography and composition across formats.",
+            IT: "Applicata l’identità su materiali stampati e asset di brand, garantendo coerenza nel tono, nella tipografia e nella composizione su tutti i formati."
+          },
+          layout: "full-grid",
+          galleryIndices: [1, 2]
+        },
+        {
+          number: "03",
+          title: { EN: "PHYSICAL PRESENCE", IT: "PRESENZA FISICA" },
+          description: {
+            EN: "Extended the identity into the physical space through window graphics and signage, reinforcing visibility and recognition in the urban environment.",
+            IT: "Estesa l’identità nello spazio fisico attraverso vetrofanie e segnaletica, rafforzando la visibilità e la riconoscibilità nell’ambiente urbano."
+          },
+          layout: "text-image",
+          galleryIndices: [3]
+        },
+        {
+          number: "",
+          title: { EN: "OUTCOME", IT: "RISULTATO" },
+          description: {
+            EN: "A clear and adaptable identity system supporting both communication and physical presence, enabling consistent brand recognition over time.",
+            IT: "Un sistema di identità chiaro e adattabile che supporta sia la comunicazione che la presenza fisica, abilitando una riconoscibilità del brand coerente nel tempo."
+          },
+          layout: "half",
+          galleryIndices: []
+        }
+      ]
+    }
+  },
+  {
     id: "ilmarmo",
-    title: "Il Marmo Brochure",
+    title: "Il Marmo",
     category: "EDITORIAL",
     tags: ["PRINT"],
     image: projectThumb("ilmarmo"),
@@ -317,7 +489,7 @@ export const PROJECTS: Project[] = [
   },  
   {
     id: "nettuno",
-    title: "Hotel Nettuno Paintings",
+    title: "Hotel Nettuno",
     category: "PAINTINSG / PRINT",
     tags: ["PRINT"],
     image: projectThumb("nettuno"),
