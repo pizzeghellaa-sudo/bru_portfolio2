@@ -1095,8 +1095,11 @@ function SignalSection({ language }: { language: Language }) {
       </div>
 
       <footer className="mt-auto pt-24 flex flex-col md:flex-row justify-between items-end gap-8 border-t border-ink/10 mt-24 py-8">
-        <div className="font-mono text-[10px] text-slate-400 uppercase tracking-widest whitespace-pre-line">
-          {t.footer}
+        <div className="flex flex-col gap-3">
+          <p className="font-mono text-[11px] text-slate-500 tracking-wide max-w-xs">{t.legalNote}</p>
+          <div className="font-mono text-[10px] text-slate-400 uppercase tracking-widest whitespace-pre-line">
+            {t.footer}
+          </div>
         </div>
         <div className="flex items-center gap-2 font-mono text-[10px] text-ink uppercase tracking-widest">
           <div className="w-3 h-3 bg-primary" />

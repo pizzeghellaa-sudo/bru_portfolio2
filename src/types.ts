@@ -401,8 +401,78 @@ export const PROJECTS: Project[] = [
     description: {
       EN: "Hotel Caesius is a luxury hospitality brand located on Lake Garda. The project involved the creation of a visual identity system and brand guidelines for print and digital applications.\n\nThe identity was implemented across all hotel touchpoints including printed materials, digital platforms and internal brand documentation.",
       IT: "L’Hotel Caesius è un brand di ospitalità di lusso situato sul Lago di Garda. Il progetto ha previsto la creazione di un sistema di identità visiva e delle linee guida del brand per applicazioni su stampa e digitale.\n\nL’identità è stata implementata in tutti i touchpoint dell’hotel, inclusi materiali stampati, piattaforme digitali e documentazione interna del brand."
+    },
+    meta: {
+      subtitle: {
+        EN: "BRAND SYSTEM / GUIDELINES",
+        IT: "SISTEMA DI BRAND / LINEE GUIDA"
+      },
+      year: "2022",
+      context: {
+        EN: "Brand identity and guidelines developed for a luxury hotel on Lake Garda, focused on creating a cohesive visual language across guest experience, communication and internal documentation.",
+        IT: "Identità di brand e linee guida sviluppate per un hotel di lusso sul Lago di Garda, focalizzate sulla creazione di un linguaggio visivo coerente tra esperienza ospite, comunicazione e documentazione interna."
+      },
+      roles: ["VISUAL DESIGN", "BRAND SYSTEM"],
+      stack: [
+        { label: "IDENTITY", value: "SYSTEM" },
+        { label: "BRAND", value: "GUIDELINES" },
+        { label: "PRINT", value: "APPLICATIONS" },
+        { label: "DOCS", value: "GOVERNANCE" }
+      ],
+      sections: [
+        {
+          number: "01",
+          title: { EN: "IDENTITY SYSTEM", IT: "SISTEMA DI IDENTITÀ" },
+          description: {
+            EN: "Defined a refined visual identity aligned with the positioning of a luxury hospitality brand, establishing typography, color palette and compositional principles to communicate clarity, elegance and consistency.",
+            IT: "Definita un’identità visiva raffinata allineata al posizionamento di un brand di ospitalità di lusso, stabilendo tipografia, palette cromatica e principi compositivi per comunicare chiarezza, eleganza e coerenza."
+          },
+          layout: "full-grid",
+          galleryIndices: [1, 10]
+        },
+        {
+          number: "02",
+          title: { EN: "BRAND GUIDELINES", IT: "LINEE GUIDA DEL BRAND" },
+          description: {
+            EN: "Structured the identity into a comprehensive brand book, defining clear rules for usage, hierarchy and consistency across all brand touchpoints.",
+            IT: "Strutturata l’identità in un brand book completo, definendo regole chiare per utilizzo, gerarchia e coerenza su tutti i touchpoint del brand."
+          },
+          layout: "full-grid",
+          galleryIndices: [3, 4, 2]
+        },
+        {
+          number: "03",
+          title: { EN: "SYSTEM APPLICATION", IT: "APPLICAZIONE DEL SISTEMA" },
+          description: {
+            EN: "Applied the identity system across key communication materials, ensuring coherence between printed assets, guest-facing materials and branded outputs.",
+            IT: "Applicato il sistema di identità sui principali materiali di comunicazione, garantendo coerenza tra asset stampati, materiali per gli ospiti e output brandizzati."
+          },
+          layout: "full-grid",
+          galleryIndices: [7, 11]
+        },
+        {
+          number: "04",
+          title: { EN: "BRAND DOCUMENTATION", IT: "DOCUMENTAZIONE DEL BRAND" },
+          description: {
+            EN: "Developed detailed documentation to support internal teams, enabling consistent implementation and long-term scalability of the brand across departments and platforms.",
+            IT: "Sviluppata documentazione dettagliata a supporto dei team interni, abilitando un’implementazione coerente e la scalabilità a lungo termine del brand tra reparti e piattaforme."
+          },
+          layout: "full-grid",
+          galleryIndices: [8]
+        },
+        {
+          number: "",
+          title: { EN: "OUTCOME", IT: "RISULTATO" },
+          description: {
+            EN: "A structured and scalable brand system, supported by comprehensive guidelines, ensuring consistency across all touchpoints and enabling long-term brand management.",
+            IT: "Un sistema di brand strutturato e scalabile, supportato da linee guida complete, che garantisce coerenza su tutti i touchpoint e abilita la gestione del brand a lungo termine."
+          },
+          layout: "half",
+          galleryIndices: []
+        }
+      ]
     }
-  },  
+  },
   {
     id: "kalika",
     title: "Kalika",
